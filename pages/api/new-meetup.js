@@ -1,4 +1,4 @@
-import { connect, disconnect, meetupsCollection } from '../utils/mongodb';
+import { connect, disconnect, meetupsCollection } from '../../lib/mongodb';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -7,8 +7,7 @@ export default async function handler(req, res) {
 
   await connect();
   const data = req.body;
-  const result = await meetupsCollection.insertOne(data);
-  console.log(result);
+  await meetupsCollection.insertOne(data);
   disconnect();
 
   res.status(201).json({ message: 'Meetup inserted!' });

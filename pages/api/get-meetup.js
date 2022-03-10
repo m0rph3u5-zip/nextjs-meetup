@@ -1,4 +1,4 @@
-import { connect, disconnect, meetupsCollection } from '../utils/mongodb';
+import { connect, disconnect, meetupsCollection } from '../../lib/mongodb';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {

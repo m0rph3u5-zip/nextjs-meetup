@@ -4,7 +4,7 @@ import {
   disconnect,
   meetupsCollection,
   ObjectId,
-} from '../utils/mongodb';
+} from '../../lib/mongodb';
 import MeetupDetails from '../../components/meetups/MeetupDetails';
 
 const MeetupDetailsPage = (props) => {

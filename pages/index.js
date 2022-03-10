@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { connect, disconnect, meetupsCollection } from './utils/mongodb';
+import { connect, disconnect, meetupsCollection } from '../lib/mongodb';
 import MeetupList from '../components/meetups/MeetupList';
 
 const HomePage = (props) => {
