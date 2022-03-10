@@ -37,3 +37,19 @@
 .header a.active {
   color: white;
 }
+
+.mobile {
+  display: none;
+}
+.desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
