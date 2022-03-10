@@ -6,7 +6,7 @@ const HomePage = (props) => {
   return (
     <>
       <Head>
-        <title>Nextjs Meet Website</title>
+        <title>Il Tuo Meet</title>
         <meta
           name='description'
           content='crea i tuoi meet in modo semplice e veloce!'
