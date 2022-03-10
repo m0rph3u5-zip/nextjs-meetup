@@ -8,12 +8,16 @@ import {
 import MeetupDetails from '../../components/meetups/MeetupDetails';
 
 const MeetupDetailsPage = (props) => {
-  console.log(props);
+  const truncateText = (text) => text.substring(0, 255);
+
   return (
     <>
       <Head>
         <title>{props.meetupData.title}</title>
-        <meta name='description' content={props.meetupData.description} />
+        <meta
+          name='description'
+          content={truncateText(props.meetupData.description)}
+        />
       </Head>
       <MeetupDetails
         title={props.meetupData.title + ' ' + props.meetupData.id}

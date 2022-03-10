@@ -22,11 +22,14 @@ export async function getStaticProps() {
   const meetups = await meetupsCollection.find().toArray();
   disconnect();
 
+  const truncateText = (text) => text.substring(0, 150);
+
   return {
     props: {
       meetups: meetups.map((meet) => ({
         title: meet.title,
         address: meet.address,
+        description: truncateText(meet.description),
         image: meet.image,
         id: meet._id.toString(),
       })),
