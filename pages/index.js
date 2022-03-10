@@ -31,7 +31,7 @@ export async function getStaticProps() {
         id: meet._id.toString(),
       })),
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 
