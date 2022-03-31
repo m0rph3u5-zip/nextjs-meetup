@@ -33,8 +33,7 @@ export async function getStaticProps() {
         image: meet.image,
         id: meet._id.toString(),
       })),
-    },
-    revalidate: 1,
+    }
   };
 }
 

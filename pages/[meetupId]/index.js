@@ -60,8 +60,7 @@ export async function getStaticProps(context) {
         address: selectedMeetup.address,
         description: selectedMeetup.description,
       },
-    },
-    revalidate: 1,
+    }
   };
 }
 
