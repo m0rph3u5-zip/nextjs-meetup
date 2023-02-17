@@ -8,6 +8,7 @@ function NewMeetupForm(props) {
   const imageInputRef = useRef();
   const addressInputRef = useRef();
   const descriptionInputRef = useRef();
+  const tokenInputRef = useRef();
 
   function submitHandler(event) {
     event.preventDefault();
@@ -16,12 +17,14 @@ function NewMeetupForm(props) {
     const enteredImage = imageInputRef.current.value;
     const enteredAddress = addressInputRef.current.value;
     const enteredDescription = descriptionInputRef.current.value;
+    const enteredToken = tokenInputRef.current.value;
 
     const meetupData = {
       title: enteredTitle,
       image: enteredImage,
       address: enteredAddress,
       description: enteredDescription,
+      token: enteredToken,
     };
 
     props.onAddMeetup(meetupData);
@@ -50,6 +53,10 @@ function NewMeetupForm(props) {
             rows='5'
             ref={descriptionInputRef}
           ></textarea>
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='token'>Token</label>
+          <input type='text' required id='token' ref={tokenInputRef} />
         </div>
         <div className={classes.actions}>
           <button>Salva Meet</button>

@@ -11,8 +11,15 @@ const NewMeetupPage = () => {
         'Content-Type': 'application/json',
       },
     });
-    const data = await response.json();
-    console.log(data);
+
+    if (!response.ok) {
+      if (!confirm("Impossibile procedere al salvataggio del meet, accesso negato! Tornare indietro?")) {
+        return;
+      }
+    } else {
+      await response.json();
+    }
+
     router.push('/');
   };
 

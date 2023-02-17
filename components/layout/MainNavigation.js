@@ -4,7 +4,7 @@ import Link from 'next/link';
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>BestManager</div>
+      <div className={classes.logo}>BestM</div>
       <nav className={classes.desktop}>
         <ul>
           <li>
