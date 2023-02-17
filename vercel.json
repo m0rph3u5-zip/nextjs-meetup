@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/admin/:match*",
-      "destination": "https://master.dqdu6k2lkvwbb.amplifyapp.com/:match*"
+      "destination": "https://staging.dwk1yftbcejem.amplifyapp.com/:match*"
     },
     {
       "source": "/bestbeapi/:match*",

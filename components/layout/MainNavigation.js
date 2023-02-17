@@ -8,10 +8,10 @@ function MainNavigation() {
       <nav className={classes.desktop}>
         <ul>
           <li>
-            <Link href='/'>Prodotti</Link>
+            <Link href='/'>Meet</Link>
           </li>
           <li>
-            <Link href='/new-meetup'>Nuova Pagina</Link>
+            <Link href='/new-meetup'>Nuovo Meet</Link>
           </li>
         </ul>
       </nav>

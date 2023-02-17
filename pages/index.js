@@ -6,7 +6,7 @@ const HomePage = (props) => {
   return (
     <>
       <Head>
-        <title>BestBe</title>
+        <title>Best Manager Meetup</title>
         <meta name='description' content='Un nuovo modo di fare E-Commerce!' />
       </Head>
       <MeetupList meetups={props.meetups} />
