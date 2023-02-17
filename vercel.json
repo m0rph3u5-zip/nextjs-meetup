@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/admin",
-      "destination": "https://staging.dwk1yftbcejem.amplifyapp.com/"
+      "source": "/admin/:match*",
+      "destination": "https://staging.dwk1yftbcejem.amplifyapp.com/:match*"
+    },
+    {
+      "source": "/bestbeapi/:match*",
+      "destination": "https://cupv4uc5eg.execute-api.eu-west-1.amazonaws.com/staging/:match*"
     }
   ]
 }
