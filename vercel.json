@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/admin",
+      "destination": "https://staging.dwk1yftbcejem.amplifyapp.com/"
+    }
+  ]
+}
