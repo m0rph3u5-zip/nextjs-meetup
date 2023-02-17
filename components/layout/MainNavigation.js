@@ -4,14 +4,14 @@ import Link from 'next/link';
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Meetup</div>
+      <div className={classes.logo}>BestBe</div>
       <nav className={classes.desktop}>
         <ul>
           <li>
-            <Link href='/'>Tutti i meet</Link>
+            <Link href='/'>Prodotti</Link>
           </li>
           <li>
-            <Link href='/new-meetup'>Aggiungi un Meet</Link>
+            <Link href='/new-meetup'>Nuova Pagina</Link>
           </li>
         </ul>
       </nav>

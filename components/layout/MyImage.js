@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const myLoader = ({ src, width, quality }) => {
   console.log(src);
-  return `${src}?w=${width}&q=${quality || 75}`
+  return `${src}?w=${width}&q=${quality || 60}`
 }
 
 function MyImage(props) {

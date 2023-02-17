@@ -6,11 +6,8 @@ const HomePage = (props) => {
   return (
     <>
       <Head>
-        <title>Il Tuo Meet</title>
-        <meta
-          name='description'
-          content='crea i tuoi meet in modo semplice e veloce!'
-        />
+        <title>BestBe</title>
+        <meta name='description' content='Un nuovo modo di fare E-Commerce!' />
       </Head>
       <MeetupList meetups={props.meetups} />
     </>
