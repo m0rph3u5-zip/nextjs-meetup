@@ -1,0 +1,9 @@
+.footerBar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  background-color: brown;
+  padding: 10px 20px;
+  color: white;
+}
